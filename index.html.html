@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrimate</title>
+    <style>
+        #park {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            background-image: url('park.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+
+        #neil {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: -500px;
+            left: -500px;
+        }
+
+        #owen {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: -500px;
+            left: -500px;
+        }
+    </style>
+    <script src="movingCharacter.js" defer></script>
+</head>
+
+<body>
+    <p><button onclick="move()">Move It!</button>&nbsp;
+        <button onclick="stopMoving()">Stop!</button></p>
+    <div id="container">
+        <div id="park">
+        <img id="neil" src="boyAlt\runningw0000.png" alt="boy" />
+        <img id="owen" src="boyAlt\runningw0000.png" alt="boy" />
+    </div>
+    </div>
+</body>
+
+</html>
